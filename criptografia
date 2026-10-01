@@ -1,0 +1,11 @@
+dicionario = "qwertyuiopasdfghjklçzxcvbnm"
+alfabeto = "abcdefghijklmnopqrstuvwyz"
+
+senha = "leonardo"
+
+senha_criptografada = ""
+
+for letra in senha:
+    posicao = ord(letra) - ord("a")
+    senha_criptografada += dicionario[posicao]
+print(senha_criptografada)
